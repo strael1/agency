@@ -1,0 +1,11 @@
+
+
+// Define the background before and width and height the icon image
+@mixin icon($width, $height){
+    content: "";
+    display: block;
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

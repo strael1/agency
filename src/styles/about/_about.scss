@@ -1,0 +1,111 @@
+.main {
+    .main__container {
+        .about {
+            background-color: $body-gray;
+        }
+        .main__about {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            padding-top: $padding-4;
+            width: $max-width-s;
+            gap: 40px;
+            
+            @media (max-width: $mobile) {
+                padding-top: 0;
+                gap: 0px;
+                width: $max-width-l;
+                flex-wrap: wrap;
+            }
+
+            .main__photo {
+                flex: 1 1200px;
+                @media (max-width: $tablet){
+                    order: 1;
+                }
+
+                .main__link {
+                    display: flex;
+                    justify-content: center;
+                    border: solid 1px $secondary;
+                    background: $secondary;
+                    width: fit-content;
+                    padding: 15px $padding-4;
+
+                    @media (min-width: $tablet){
+                        display: none;
+                    }
+                    
+                    @media (max-width: $mobile){ 
+                        width: 100%;
+                    }
+
+                    .link {
+                        color: $gray;
+                        font-size: $size-6;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &::after {
+                            margin-left: $margin-1;
+                            content: "";
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            background-image: url("data:image/svg+xml,%3Csvg stroke='currentColor' fill='none' stroke-width='0' viewBox='0 0 24 24' class='Home_icon__btn__MJvMe' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+                        }
+                    }
+                }
+            }
+
+            .main__text {
+                .title {
+                    font-size: $size-12;
+                    color: $gray;
+                    margin-bottom: 0;
+                }
+
+                .content {
+                    margin-top: $margin-2;
+                    padding-bottom: $padding-2;
+                    font-size: $size-7;
+                    color: $gray;
+
+                    @media (min-width: $tablet){
+                        width: 90%;
+                    }
+                }
+
+                .main__link {
+                    display: flex;
+                    justify-content: center;
+                    border: solid 1px $secondary;
+                    background: $secondary;
+                    width: fit-content;
+                    padding: 15px $padding-4;
+                    @media (max-width: $tablet){ 
+                        display: none; 
+                        width: 100%;
+                    }
+                    .link {
+                        color: $gray;
+                        font-size: $size-6;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &::after {
+                            margin-left: $margin-1;
+                            content: "";
+                            display: block;
+                            width: 14px;
+                            height: 14px;
+                            background-image: url("data:image/svg+xml,%3Csvg stroke='currentColor' fill='none' stroke-width='0' viewBox='0 0 24 24' class='Home_icon__btn__MJvMe' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
