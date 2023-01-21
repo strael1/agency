@@ -32,6 +32,9 @@
                         justify-content: center;
                         img {
                             width: fit-content;
+                            @media (max-width: $mobile){
+                                width: 100%;
+                            }
                         }
                         border-top-right-radius: $radius-s;
                         border-top-left-radius: $radius-s;

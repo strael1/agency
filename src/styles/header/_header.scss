@@ -86,16 +86,4 @@
 
 }
 
-.desktop {
-    @media (max-width: $mobile) {
-        display: none;
-    }    
-}
-
-.mobile {
-    @media (min-width: $mobile) {
-        display: none;
-    }
-}
-
 
