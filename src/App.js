@@ -7,7 +7,7 @@ import Reference from './components/reference/reference.component';
 function App() {
   return (
     <>
-      <Header />
+      <Header/>
       <About />
       <Mission />
       <Reference />
