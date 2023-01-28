@@ -1,10 +1,8 @@
 import '../../styles/styles.scss';
 import  { useState } from 'react';
 
-
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const handleMenuClick = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -55,10 +53,11 @@ const Header = () => {
                                 <div><img src="https://grupokpg.com/images/icons/logo/logowebp.webp" alt="logo" /></div>
                                 <div className="header__logo-bars-mobile" onClick={handleMenuClick}></div>
                             </div>
-                            <div className="header__list-mobile" style={{display: isMenuOpen ? 'block' : 'none'}}>
+                            <div className="header__list-mobile" style={{transform: isMenuOpen ? 'translateY(0px)' : 'translateY(-370px)'}}>
                                 <div className='header__list-mobile-close' 
                                 //quando clicar fechar o menu
                                 onClick={handleMenuClick}></div>
+                                
                                 <ul className='header__main-list-mobile'>
                                     <li className='header__item-list-mobile'>Home</li>
                                     <li className='header__item-list-mobile'>Sobre Nós</li>
@@ -66,6 +65,7 @@ const Header = () => {
                                     <li className='header__item-list-mobile'>Carreiras</li>
                                     <li className='header__item-list-mobile'>Fale Conosco</li>
                                 </ul>
+                                
                             </div>
 
                             <div className="header__container-2">

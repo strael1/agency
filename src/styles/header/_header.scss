@@ -24,6 +24,12 @@
             }
         }
     }   
+
+
+
+    
+
+
     .header__list-mobile{
         
         //ocupar a tela apenas do conteudo da lista de baixo para cima
@@ -35,17 +41,13 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 40vh;
+        height: 55vh;
         background-color: $gray-2;
-        z-index: 100;
-        display: none;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
-        transition: .5s ;
-
-
-
+        border-radius: 0 0 15px 15px;        
+        transition: all 0.9s ease-out;
+    
         .header__list-mobile-close{
             display: flex;
             justify-content: flex-end;
@@ -61,11 +63,14 @@
         }
 
         .header__main-list-mobile{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-row-gap: 38px;
+            justify-items: center;
+            //grid alinhar itens no centro
+
+
             font-size: medium;
-            //espacamento entre linhas
-            line-height: 2;
+            //espacamento entre linhas 
             align-items: center;
             padding-left: 0;
             .header__item-list-mobile {
