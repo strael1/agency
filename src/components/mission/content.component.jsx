@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const items = [
     {
@@ -29,7 +29,7 @@ const Content = (props) => {
         <div className="mission__photo">
             {
                 items.map(item => (
-                    item.label == props.content && 
+                    item.label === props.content && 
                         <div key={item.id}  className="card">
                             <div className="mission__photo-image">
                                 <img src={item.imageUrl} alt="Sobre nós" />

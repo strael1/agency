@@ -1,0 +1,97 @@
+.reference {
+    // a className reference__home__text deve ficar alinhado a esquerda e a classname reference__home__image a direita   
+    background-color: #f4bc74;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+    
+
+    .reference__home__text{
+        width: 50%;
+        text-align: left;
+        color: $primary;
+        font-size: 2.0rem;
+        font-weight: 500;
+        padding-left: 10%;
+        padding-top: -20px;
+        
+        
+        
+        //elemento h3 em negrito
+        h3{
+            font-weight: 600;
+            left: 155px;
+            top: 150px;
+            
+        }
+        p{
+            margin-top: 1rem;
+            font-size: 18px;
+            text-align: left;
+            
+        }
+       
+
+    }
+
+    
+
+    .reference__home__image{
+        width:50%;
+        text-align: center;
+        // o tamanho da imagem deve ser igual ao tamanho da section
+        
+    }
+}
+
+
+.reference_mobile{
+    
+    background-color: #f4bc74;
+    width:100vw;
+    margin:auto;
+    margin-top: 20px;
+
+
+    .reference_mobile__home__text{
+        text-align: center;
+        color: $primary;
+        padding:60px 0px;
+        position: relative;
+        height: 550px;
+        top: -50px;
+
+        //elemento h3 em negrito
+        h3{
+            font-weight: 600;
+            //estilo negrito
+            font-size: 20px;
+
+            
+        }
+        p{
+            margin-top: 1rem;
+            font-size: 18px;
+
+        }
+       
+
+    }
+}
+
+
+
+// botoes 
+
+// background: transparent;
+// border: 1px solid #343a40;
+// border-radius: 50%;
+// height: 35px;
+// width: 35px;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// color: #343a40;

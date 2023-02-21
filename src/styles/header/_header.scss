@@ -157,7 +157,7 @@
                 font-weight: $weight-6;
                 display: flex;
                 
-                &::after {
+                &::after { // &::after  
                     margin-left: $margin-1;
                     content: "";
                     display: block;
