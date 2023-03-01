@@ -3,6 +3,7 @@ import Header from './components/header/header.component';
 import About from './components/about/about.component';
 import Mission from './components/mission/mission.component';
 import Reference from './components/reference/reference.component';
+import Company from './components/company/company.component';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <About />
       <Mission />
       <Reference />
+      <Company/>
     </>
   );
 }
